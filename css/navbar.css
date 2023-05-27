@@ -1,0 +1,228 @@
+/* Navbar container */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: chocolate;
+
+    padding: 10px;
+
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    gap: 30px;
+    height: 100px;
+    max-height: 100px;
+    width: 100%;
+
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    /* Box shadow effect */
+
+}
+
+.logo {
+    float: left;
+}
+
+
+.logo-pele {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 40px;
+    letter-spacing: 4px;
+    padding: 30px;
+
+}
+
+
+
+.logo-pele:hover {
+    color: black;
+    transition: 0.6s;
+}
+
+.pele-app-button {
+    padding: 10px 15px;
+    width: 200px;
+
+    background-color: brown;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: 0.6s;
+    border: none;
+
+
+    padding: 8px 16px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.pele-app-button:hover {
+    background-color: rgb(199, 68, 68);
+}
+
+
+/* Navigation links */
+.navbar-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+
+
+    float: left;
+    margin-right: 20px;
+
+}
+
+.navbar-links li {
+    display: inline-block;
+    margin-right: 100px;
+    transition: transform 0.3 ease;
+    backface-visibility: hidden;
+
+}
+
+.navbar-links li :hover {
+    display: inline-block;
+    transition: 0.6s;
+
+    transform: scale(1.1);
+    backface-visibility: hidden;
+}
+
+.navbar-links li :focus {
+    font-size: 36px;
+    transform: scale(1.1);
+}
+
+
+
+.navbar-links a {
+    text-decoration: none;
+    color: #333;
+}
+
+.navbar-social {
+    float: right;
+}
+
+/* end Navigation links */
+
+
+/* Buttons and search section */
+.navbar-buttons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    float: right;
+}
+
+.navbar-buttons {
+    margin-right: 10px;
+    border: none;
+
+}
+
+.navbar-buttons input[type="text"] {
+    padding: 6px;
+    border: none;
+    border-radius: 4px;
+    color: #333;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+
+    /* Align logo and navigation links vertically */
+    .logo,
+    .navbar-links {
+        float: none;
+        text-align: center;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+    }
+
+    /* Center align social icons and navbar buttons */
+    .navbar-social,
+    .navbar-buttons {
+        float: none;
+        text-align: center;
+    }
+}
+
+/* ////////////////////// */
+
+
+/* social icon css */
+
+.social-icons {
+    font-size: 24px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 10px;
+}
+
+.social-icons li {
+    margin-right: 5px;
+}
+
+.social-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+/* fb tk yt insta */
+.social-icons a:nth-child(1) {
+    background: linear-gradient(45deg, #4267B2, #4267B2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.social-icons a:nth-child(2) {
+    background: linear-gradient(45deg, #000000, #000000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.social-icons a:nth-child(3) {
+    background: linear-gradient(45deg, #405DE6, #5B51D8, #833AB4, #C13584, #E1306C, #FD1D1D, #F56040, #F77737, #FCAF45, #FFDC80);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.social-icons a:nth-child(4) {
+
+    background: linear-gradient(45deg, #FF0000, #FF0000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* fb tk yt insta */
+
+
+.ravici-aba{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
